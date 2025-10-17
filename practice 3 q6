@@ -1,0 +1,9 @@
+void main() {
+  String original = "Dart";
+  String reversed = reverseString(original);
+  print("Reversed string: $reversed");
+}
+
+String reverseString(String str) {
+  return str.split('').reversed.join();
+}
