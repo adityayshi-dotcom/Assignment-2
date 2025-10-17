@@ -1,0 +1,28 @@
+import 'dart:math';
+
+void main() {
+  int passwordLength = 12; // You can change the length
+  String password = generatePassword(passwordLength);
+  print("Generated Password: $password");
+}
+
+
+String generatePassword(int length) {
+  const String upperCaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const String lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz";
+  const String numbers = "0123456789";
+  const String specialChars = "@#\$%^&*()_+-=[]{}|;:,.<>?";
+
+  
+  String allChars = upperCaseLetters + lowerCaseLetters + numbers + specialChars;
+
+  Random random = Random();
+  String password = '';
+
+  for (int i = 0; i < length; i++) {
+    int index = random.nextInt(allChars.length);
+    password += allChars[index];
+  }
+
+  return password;
+}
