@@ -1,0 +1,12 @@
+import 'dart:math';
+
+void main() {
+  int base = 5;
+  int exponent = 3;
+  num result = power(base, exponent);
+  print("$base^$exponent = $result");
+}
+
+num power(num base, num exponent) {
+  return pow(base, exponent);
+}
