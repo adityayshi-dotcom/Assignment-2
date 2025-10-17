@@ -1,0 +1,8 @@
+void main() {
+  print("Area: ${calculateArea(5, 4)}");     
+  print("Default Area: ${calculateArea()}"); 
+}
+
+int calculateArea([int length = 1, int width = 1]) {
+  return length * width;
+}
