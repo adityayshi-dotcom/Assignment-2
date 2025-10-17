@@ -1,0 +1,11 @@
+import 'dart:math';
+
+void main() {
+  double radius = 5;
+  double area = areaOfCircle(radius);
+  print("Area of the circle is: $area");
+}
+
+double areaOfCircle(double r) {
+  return pi * r * r;
+}
