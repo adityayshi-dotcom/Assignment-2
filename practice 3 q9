@@ -1,0 +1,10 @@
+void main() {
+  int largest = maxNumber(12, 45, 33);
+  print("Largest number: $largest");
+}
+
+int maxNumber(int a, int b, int c) {
+  return (a > b)
+      ? (a > c ? a : c)
+      : (b > c ? b : c);
+}
