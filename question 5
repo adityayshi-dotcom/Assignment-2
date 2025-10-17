@@ -1,0 +1,21 @@
+import 'dart:io';
+
+void main() {
+  
+  stdout.write("Enter a positive integer: ");
+  String? input = stdin.readLineSync();
+
+  
+  int? n = int.tryParse(input ?? '');
+
+  if (n == null || n < 1) {
+    print("Invalid input. Please enter a positive integer.");
+    return;
+  }
+
+  
+  int sum = n * (n + 1) ~/ 2; // ~/ is integer division
+
+  
+  print("The sum of the first $n natural numbers is: $sum");
+}
