@@ -1,0 +1,25 @@
+import 'dart:io';
+
+void main() {
+  
+  stdout.write("Enter a number: ");
+  String? input = stdin.readLineSync();
+
+  
+  double? number = double.tryParse(input ?? '');
+
+  
+  if (number == null) {
+    print("Invalid input. Please enter a valid number.");
+    return;
+  }
+
+  
+  if (number > 0) {
+    print("The number is positive.");
+  } else if (number < 0) {
+    print("The number is negative.");
+  } else {
+    print("The number is zero.");
+  }
+}
