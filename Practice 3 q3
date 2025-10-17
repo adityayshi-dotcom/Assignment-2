@@ -1,0 +1,10 @@
+void main() {
+  
+  greet("John");
+}
+
+
+void greet(John) {
+  print("Hello, $John");
+}
+
