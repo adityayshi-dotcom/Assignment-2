@@ -1,0 +1,10 @@
+void main() {
+  
+  printMyName();
+}
+
+// Function definition
+void printMyName() {
+  String name = "Adity"; 
+  print("My name is $  "Adity");
+}
